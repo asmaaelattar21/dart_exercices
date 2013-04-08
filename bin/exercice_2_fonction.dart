@@ -1,4 +1,4 @@
-part of exercice2;
+part of ex2;
 
 /*****************************************
 * exercice 2_1
