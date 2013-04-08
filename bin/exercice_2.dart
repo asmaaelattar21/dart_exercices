@@ -1,13 +1,13 @@
-library exercice2;
+library ex2;
 import 'dart:math';
-part 'packages/exercice_2_fonction.dart';
+part 'exercice_2_fonction.dart';
 
 
 void main() {
   print ("Exercice 2_1");
   print ("************************************");
   print('la plus longue phrase  est:');
-  var phrase = ['Je suis pas bonne en dart', 'je vais prendre plus de temps pour programmer', 'je vais prendre plus de temps pour bien programmer le language dart'];
+  var phrase = ['Je suis pas bonne en programmation', 'je vais prendre plus de temps pour programmer', 'je vais prendre plus de temps pour bien programmer le language dart'];
   lapluslongphrase(phrase);  
   print ("");
   
@@ -55,3 +55,4 @@ void main() {
 }
 
  
+
