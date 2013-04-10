@@ -1,4 +1,4 @@
-part of ex2;
+part of exercice2;
 
 /*****************************************
 * exercice 2_1
@@ -55,46 +55,51 @@ Listeelementaleatoire(List element) {
 * exercice 2_4
 ******************************************/
 membreduclub(var clubmember) {                         
-  print("nom, prénom et courriel du membres de norte club: ");
+  print("Nom, prénom et courriel du membres de norte club: ");
   print(clubmember);
-  
-  print('la liste triée de nos membres du club:');
+  print ("----");
+  print('La liste triée de nos membres du club:');
   clubmember.sort((a, b) => a.compareTo(b));
   print(clubmember);
+  print ("----");
+  print('Le nom dont la première lettre commence par «D» :');
+  var lettre = clubmember.where((nom) => nom.startsWith('D')).toList(); 
+  print(lettre);
+
  
   }
 /*****************************************
 * exercice 2_5
 ******************************************/
 imprimerclubetmembre(membreduclub){
-  print('liste des club et les membres: ');
+  print('**liste des club et les membres: ');
   membreduclub.forEach((a,b) => print('$a: $b'));
 }
 
 imprimerinfoclub(membreduclub){
-  print('liste des club: ');
+  print('**liste des club: ');
   membreduclub.forEach((a,b) => print('$a'));
 }
 
 imprimerlistemembre(membreduclub){
-  print('liste des membres: ');
+  print('**liste des membres: ');
   membreduclub.forEach((a,b) => print('$b'));
 }
 
 ajouterunclub(membreduclub){
-  print('la liste des club avec un ajout: ');
+  print('**la liste des club avec un ajout: ');
   membreduclub['CEPSUM'] = '';
   membreduclub.forEach((a,b) => print('$a'));
 }
 
 ajouterunmembreaunclub(membreduclub){
-  print('la liste des club avec un ajout dun membre au CEPSUM: ');
+  print('**la liste des club avec un ajout dun membre au CEPSUM: ');
   membreduclub['CEPSUM'] = 'Marie Helene Patricia';
   membreduclub.forEach((a,b) => print('$a: $b'));
 }
 
 modifierunmembreaunclub(membreduclub){
-  print('la liste  des club avec la modification de membres: ');
+  print('**la liste  des club avec la modification de membres: ');
   membreduclub['Fit for every'] = 'Fatima Elattar';
   membreduclub['Fit for elle'] = 'Soukaina Nancy';
   membreduclub['Fit for life'] = 'Jack Lafonte';
